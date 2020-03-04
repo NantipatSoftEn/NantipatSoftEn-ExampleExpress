@@ -1,4 +1,11 @@
 exports.aboutMe  =  (req,res) => {
-    
-    res.render('index', { title: 'fcuk' });
+    const img =  `../images/me.jpg`;
+    res.render('index', { 
+        title: 'aboutMe' ,
+        name : `Army rank 1`,
+        img : img,
+        age : 22,
+        hobby :  `play dota2`,
+
+    });
 }
